@@ -21,7 +21,26 @@
     "com.openai": {
       "interface": {
         "displayName": "Agentery",
-        "category": "Productivity"
+        "shortDescription": "AI tool prices, fairly checked",
+        "longDescription": "Agentery helps you choose AI products, AI agents, MCP servers and APIs, and judge what they should cost. It tracks the published pricing pages of thousands of AI products and records each price with its source and the date it was observed.\n\nAsk it to:\n- Shortlist tools for a specific job, with task fit, delivery type (hosted agent, MCP server, API) and known pricing for each.\n- Open a product's profile: plans, prices, billing units, deployment, licence and how to connect.\n- Compare two to six products side by side on the same basis.\n- Check whether a price or quote is fair: the median and typical range for comparable products, by buyer tier and billing unit.\n- Follow the Agent Economy Price Index (AEPI) and its history.\n- Ask one specific question about a product (for example \"is there a free trial?\"), answered from the vendor's own pages with quotes and links.\n\nAgentery reports only what vendors publish. A missing price is shown as unknown, never as zero, and \"contact sales\" is not treated as a price. No account, sign-in or API key is needed.",
+        "developerName": "Agentery",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://agentery.com",
+        "supportURL": "https://agentery.com/support",
+        "privacyPolicyURL": "https://agentery.com/privacy",
+        "termsOfServiceURL": "https://agentery.com/terms",
+        "defaultPrompt": [
+          "Use Agentery to find an MCP server that can reply to Zendesk tickets, with prices.",
+          "Use Agentery to check whether $49 a month is fair for an AI meeting-notes tool for a small team.",
+          "Use Agentery to compare the plans and prices of the top three AI customer-support agents."
+        ],
+        "brandColor": "#1F9D57",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
       }
     }
   }
