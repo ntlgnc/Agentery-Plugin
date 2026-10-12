@@ -1,0 +1,19 @@
+{
+  "name": "agentery",
+  "version": "1.0.0",
+  "description": "Find suitable AI tools, agents and MCP servers for a task, compare their published prices, and check fair market prices, via Agentery's hosted MCP server. No account, no API key.",
+  "author": {
+    "name": "Agentery",
+    "email": "help@agentery.com",
+    "url": "https://agentery.com"
+  },
+  "homepage": "https://agentery.com/connect",
+  "repository": "https://github.com/agentery/agentery-plugin",
+  "license": "MIT",
+  "keywords": [
+    "agentery",
+    "agentery mcp",
+    "agentery pricing",
+    "agent economy price index"
+  ]
+}

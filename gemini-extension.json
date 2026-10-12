@@ -1,0 +1,10 @@
+{
+  "name": "agentery",
+  "version": "1.0.0",
+  "description": "Find suitable AI tools, agents and MCP servers for a task, compare their published prices, and check fair market prices, via Agentery's hosted MCP server. No account, no API key.",
+  "mcpServers": {
+    "agentery": {
+      "httpUrl": "https://agentery.com/api/mcp"
+    }
+  }
+}

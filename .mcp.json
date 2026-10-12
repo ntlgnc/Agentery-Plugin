@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "agentery": {
+      "type": "http",
+      "url": "https://agentery.com/api/mcp"
+    }
+  }
+}
