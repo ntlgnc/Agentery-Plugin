@@ -27,6 +27,7 @@ no sign-in and no API key are needed on any of them.
 | Platform | Install | Files it reads |
 | --- | --- | --- |
 | Grok Build | `grok plugin marketplace add xai-org/plugin-marketplace` then `grok plugin install agentery --trust` | `.grok-plugin/plugin.json`, `.mcp.json`, `skills/` |
+| GitHub Copilot CLI | `copilot plugin install ntlgnc/Agentery-Plugin` (see below) | `plugin.json`, `mcp.json`, `skills/` |
 | Claude Code | `claude --plugin-dir <clone>`, or install from any marketplace that lists it | `.claude-plugin/plugin.json`, `.mcp.json`, `skills/` |
 | Cursor | From a clone as a local plugin, or from the Cursor marketplace once listed | `.cursor-plugin/plugin.json`, `mcp.json`, `skills/` |
 | Codex and other Agent Plugins clients | Install from a clone or a marketplace that lists it | `plugin.json`, `mcp.json`, `skills/` |
@@ -35,6 +36,33 @@ no sign-in and no API key are needed on any of them.
 
 Claude (claude.ai and Claude Desktop) can also connect directly: Settings →
 Connectors → Add custom connector → `https://agentery.com/api/mcp`.
+
+### GitHub Copilot
+
+**Copilot CLI** reads the Agent Plugins manifest (`plugin.json`) and `mcp.json`
+at the repository root.
+
+```bash
+copilot plugin install ntlgnc/Agentery-Plugin
+copilot mcp get agentery     # shows: Type http, URL https://agentery.com/api/mcp, Source: Plugin
+```
+
+Copilot CLI marks direct repository installs as deprecated in favour of
+marketplace installs. Once Agentery is listed in the
+[github/copilot-plugins](https://github.com/github/copilot-plugins) marketplace,
+install it from there instead:
+
+```bash
+copilot plugin marketplace add github/copilot-plugins
+copilot plugin install agentery@copilot-plugins
+```
+
+Then ask, for example: *"Using Agentery, what is a fair monthly price for an
+AI meeting-notes tool for a small team?"* No sign-in or API key is needed for
+Agentery; Copilot itself needs your usual GitHub Copilot login.
+
+**Copilot in VS Code** (agent mode): run **MCP: Add Server** → **HTTP** →
+`https://agentery.com/api/mcp`, name it `agentery`, and leave authentication empty.
 
 ## Tools
 
