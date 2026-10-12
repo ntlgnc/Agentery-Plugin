@@ -30,7 +30,7 @@ no sign-in and no API key are needed on any of them.
 | Claude Code | `claude --plugin-dir <clone>`, or install from any marketplace that lists it | `.claude-plugin/plugin.json`, `.mcp.json`, `skills/` |
 | Cursor | From a clone as a local plugin, or from the Cursor marketplace once listed | `.cursor-plugin/plugin.json`, `mcp.json`, `skills/` |
 | Codex and other Agent Plugins clients | Install from a clone or a marketplace that lists it | `plugin.json`, `mcp.json`, `skills/` |
-| Gemini CLI | `gemini extensions install https://github.com/agentery/agentery-plugin` | `gemini-extension.json` |
+| Gemini CLI | `gemini extensions install https://github.com/ntlgnc/Agentery-Plugin` | `gemini-extension.json` |
 | Any other MCP client | Add a remote (streamable HTTP) MCP server with URL `https://agentery.com/api/mcp` and no auth | none |
 
 Claude (claude.ai and Claude Desktop) can also connect directly: Settings →
